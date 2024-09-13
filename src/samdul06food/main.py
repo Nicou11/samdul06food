@@ -7,7 +7,10 @@ import time
 app = FastAPI()
 
 origins = [
-        "http://localhost:8899.com",
+        "http://localhost:8006",
+        "http://localhost:8899",
+        "http://127.0.0.1:8899",
+        "https://samdul06food.web.app",
 ]
 
 app.add_middleware(
