@@ -18,7 +18,8 @@
             event.preventDefault(); // 폼 기본 제출 방지
 
             const foodName = document.getElementById("foodName").value;
-            const url = `http://127.0.0.1:8765/n06/food?name=${encodeURIComponent(foodName)}`;
+            const url = `http://api.samdulshop.shop/n06/food?name=${encodeURIComponent(foodName)}`;
+            //const url = `http://127.0.0.1:8765/n06/food?name=${encodeURIComponent(foodName)}`;
 
             fetch(url, {
                 method: 'GET',
