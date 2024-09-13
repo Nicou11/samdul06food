@@ -55,4 +55,4 @@ def food(name: str):
     # 시간을 구함
     # 음식 이름과 시간을 csv 로 저장 -> /code/data/food.csv
 
-food("chicken")
+#food("chicken")
