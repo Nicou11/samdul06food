@@ -42,8 +42,3 @@ def food(name: str):
     # 음식 이름과 시간을 csv 로 저장 -> /code/data/food.csv
     print("========================" + name )
     return {"food": name, "time": real_time}
-
-food("pizza")
-
-#@app.get("/food/save")
-#def save(day):
