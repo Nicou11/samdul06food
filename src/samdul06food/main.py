@@ -36,8 +36,8 @@ def read_root():
 @app.get("/food")
 def food(name: str):
 
-    timezone = pytz.timezone('Asia/Seoul')
-    korea = datetime.now(timezone) 
+    #timezone = pytz.timezone('Asia/Seoul')
+    korea = datetime.now(pytz.timezone('Asia/Seoul')) 
     day = time.strftime('%Y-%m-%d')
     real_time = korea.strftime('%Y-%m-%d %H:%M:%S')
     data = {"food": name, "time": real_time}
