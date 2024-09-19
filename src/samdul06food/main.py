@@ -24,8 +24,8 @@ app.add_middleware(
 )
 
 home_path = os.path.expanduser("~")
-file_path = "{home_path}/code/data/food.csv"  # local test용
-#file_path = "/code/data/food.csv"    # AWS 배포용
+#file_path = "{home_path}/code/data/food.csv"  # local test용
+file_path = "/code/data/food.csv"    # AWS 배포용
 if not os.path.exists(file_path):
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
